@@ -3,9 +3,9 @@
 #include <iostream>
 #include "valid.hpp"
 
-//'Validation
+//'@title Validation
 //'
-//'Crosses georreferenced classification predictions with their respective validation tables. Both tables must have columns named X, Y, and Prediction
+//'@description Crosses georreferenced classification predictions with their respective validation tables. Both tables must have columns named X, Y, and Prediction
 //'@param valid Validation data frame
 //'@param predic Prediction data frame
 //'@export

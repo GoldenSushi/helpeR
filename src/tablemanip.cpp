@@ -3,10 +3,8 @@
 #include <string>
 using namespace Rcpp;
 
-//'Negative Cleaner
-//'
-//'Substitutes all the negative values in the given Data Frame for 0.
-//'
+//'@title Negative Cleaner
+//'@description Substitutes all the negative values in the given Data Frame for 0.
 //'@param x The Data Frame user wishes to process.
 //'@export
 // [[Rcpp::export]]

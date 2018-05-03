@@ -1,9 +1,9 @@
 #include <Rcpp.h>
 #include "table.hpp"
 
-//'C Read
+//'@title C Read
 //'
-//'Custom csv parser built using c++. For now it's just a test, and it is a little slower than R's read.csv, but in the future will have other custom utils
+//'@description Custom csv parser built using c++. For now it's just a test, and it is a little slower than R's read.csv, but in the future will have other custom utils
 //'@param fileName name of the file or path leading to it.
 //'@param header Indicates if the header is included in the file.
 //'@export

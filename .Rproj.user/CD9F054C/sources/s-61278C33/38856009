@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "2125158020",
     "id" : "38856009",
-    "lastKnownWriteTime" : 1525319333,
-    "last_content_update" : 1525319333,
+    "lastKnownWriteTime" : 1525320743,
+    "last_content_update" : 1525320743885,
     "path" : "~/Prog/Mapping/Workspace/modelscript.R",
     "project_path" : null,
     "properties" : {
-        "cursorPosition" : "14,55",
+        "cursorPosition" : "3,17",
         "scrollLine" : "0"
     },
     "relative_order" : 1,

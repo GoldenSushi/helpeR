@@ -1,0 +1,37 @@
+#ifndef SEARCH_VALID_H
+#define SEARCH_VALID_H
+
+#include <Rcpp.h>
+
+// [[Rcpp::export]]
+void search_coord(Rcpp::DataFrame df, int &x, int &y) {
+  
+  x = -1;
+  y = -1;
+  
+  try {
+    x = df.findName("X");
+  } catch (std::exception &e) {}
+  try {
+    x = df.findName("x");
+  } catch (std::exception &e) {}
+  try {
+    y = df.findName("Y");
+  } catch (std::exception &e) {}
+  try {
+    y = df.findName("y");
+  } catch (std::exception &e) {}
+}
+
+// [[Rcpp::export]]
+void search_predic(Rcpp::DataFrame df, int &predic_col) {
+  
+  predic_col = -1;
+  
+  try {
+    predic_col = df.findName("Prediction");
+  } catch (std::exception &e) {}
+  
+}
+
+#endif //SEARCH_VALID_H 

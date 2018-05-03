@@ -1,0 +1,141 @@
+## Use with the Workspace folder as working dir ##########################
+
+library(devtools)
+library(roxygen2)
+library(helpeR)
+library(nnet)
+library(randomForest)
+library(e1071)
+
+
+## Input Files ######################################################
+qpoints_010 <- read.csv("qgis_points_010_csv.csv", header = TRUE)
+qpoints_1020 <- read.csv("qgis_points_1020_csv.csv", header = TRUE)
+qpoints_2040 <- read.csv("qgis_points_2040_csv.csv", header = TRUE)
+model_dset <- read.csv("model_data.csv", header = TRUE)
+#####################################################################
+
+
+## normalize model data #########################################
+sc_model_dset <- cbind(model_dset$Matorig, data.frame(scale(model_dset[,2:26])))
+colnames(sc_model_dset) <- colnames(model_dset)
+sc_qpoints_010 <- scale(qpoints_010)
+#################################################################
+
+
+## normalize model data #########################################
+sc_qpoints_010 <- scale(qpoints_010[4:24])
+sc_qpoints_1020 <- scale(qpoints_1020[4:24])
+sc_qpoints_2040 <- scale(qpoints_2040[4:24])
+#################################################################
+
+
+## Modeling #####################################################
+set.seed(47)
+neural_model <- nnet(Matorig ~ Al2O3 + SiO2 + P2O5 + Cl + K2O + CaO + Ti + V + Cr + Mn + Fe + Ni + Cu + Zn + Rb + Sr + Yt + Zr + Ba + Pb, data = sc_model_dset, size = 12, linout = FALSE)
+set.seed(47)
+svm_model <- svm(Matorig ~ Al2O3 + SiO2 + P2O5 + Cl + K2O + CaO + Ti + V + Cr + Mn + Fe + Ni + Cu + Zn + Rb + Sr + Yt + Zr + Ba + Pb, data = sc_model_dset)
+set.seed(47)
+rf_model <- randomForest(Matorig ~ Al2O3 + SiO2 + P2O5 + K2O + CaO + V + Fe + Ni + Cu + Zn + Rb + Sr + Yt + Zr + Ba + Pb, data = sc_model_dset, ntree = 5000, importance = TRUE)
+#################################################################
+
+
+## Predictions ################################################
+col_nam <- function(x) {
+  colnames(x) <- "Prediction"
+  x
+}
+
+pred_nnet010 <- predict(neural_model, newdata = sc_qpoints_010)
+pred_svm010 <- col_nam(data.frame(predict(svm_model, newdata = sc_qpoints_010)))
+pred_rf010 <- col_nam(data.frame(predict(rf_model, newdata = sc_qpoints_010)))
+
+pred_nnet1020 <- predict(neural_model, newdata = sc_qpoints_1020)
+pred_svm1020 <- col_nam(data.frame(predict(svm_model, newdata = sc_qpoints_1020)))
+pred_rf1020 <- col_nam(data.frame(predict(rf_model, newdata = sc_qpoints_1020)))
+
+pred_nnet2040 <- predict(neural_model, newdata = sc_qpoints_2040)
+pred_svm2040 <- col_nam(data.frame(predict(svm_model, newdata = sc_qpoints_2040)))
+pred_rf2040 <- col_nam(data.frame(predict(rf_model, newdata = sc_qpoints_2040)))
+###############################################################
+
+
+## helps to see nnet results ########################################
+neural_arrange <- function(x) {
+  neural_result <- data.frame(matrix(ncol = 1, nrow(x)))
+  colnames(neural_result) <- "Predict"
+  for (i in 1:nrow(x)){
+    if (max(x[i,]) == x[i,1])
+      neural_result[i,1] <- "Amarelada"
+    if (max(x[i,]) == x[i,2])
+      neural_result[i,1] <- "Azul"
+    if (max(x[i,]) == x[i,3])
+      neural_result[i,1] <- "Vermelha"
+  }
+  x <- data.frame(cbind(neural_result$Predict, x))
+  colnames(x) <- c("Prediction", colnames(x[,2:4]))
+  x
+}
+
+#pred_nnet010 <- neural_arrange(pred_nnet010)
+#pred_nnet1020 <- neural_arrange(pred_nnet1020)
+#pred_nnet2040 <- neural_arrange(pred_nnet2040)
+
+pred_nnet010 <- neural.arrange(pred_nnet010)
+pred_nnet1020 <- neural.arrange(pred_nnet1020)
+pred_nnet2040 <- neural.arrange(pred_nnet2040)
+####################################################################
+
+
+## Validation ######################################################
+valid_tab <- read.csv(file = "valid_tab.csv", header= TRUE)
+pred_nnet2040 <- put_coord2040(pred_nnet2040$Prediction)
+colnames(pred_nnet2040) <- c("x", "y", "Prediction")
+
+
+system.time(qpoints_010 <- read.csv("qgis_points_010_csv.csv", header = TRUE))
+system.time(test <- cread_csv("qgis_points_010_csv.csv", TRUE))
+####################################################################
+
+## Output Files ############################################################################
+put_coord010 <- function (x) {
+  cbind(qpoints_010[,2:3], x)
+}
+put_coord1020 <- function (x) {
+  cbind(qpoints_1020[,2:3], x)
+}
+put_coord2040 <- function (x) {
+  cbind(qpoints_2040[,2:3], x)
+}
+insert_id <- function(x) {
+  id <- matrix(ncol = 1, nrow = nrow(x))
+  colnames(id) <- "_id"
+  for (i in 1:nrow(x)){
+    if (x[i,3] == "Amarelada")
+      id[i,1] <- 1
+    if (x[i,3] == "Azul")
+      id[i,1] <- 2
+    if (x[i,3] == "Vermelha")
+      id[i,1] <- 3
+  }
+  cbind(id, x)
+}
+
+write.csv(insert_id(put_coord010(pred_nnet010$Prediction)), file = "pred_nnet010.csv")
+write.csv(insert_id(put_coord010(pred_svm010)), file = "pred_svm010.csv")
+write.csv(insert_id(put_coord010(pred_rf010)), file = "pred_rf010.csv")
+
+write.csv(insert_id(put_coord1020(pred_nnet1020$Prediction)), file = "pred_nnet1020.csv")
+write.csv(insert_id(put_coord1020(pred_svm1020)), file = "pred_svm1020.csv")
+write.csv(insert_id(put_coord1020(pred_rf1020)), file = "pred_rf1020.csv")
+
+write.csv(insert_id(put_coord2040(pred_nnet2040$Prediction)), file = "pred_nnet2040.csv")
+write.csv(insert_id(put_coord2040(pred_svm2040)), file = "pred_svm2040.csv")
+write.csv(insert_id(put_coord2040(pred_rf2040)), file = "pred_rf2040.csv")
+##########################################################################################
+
+
+
+
+
+

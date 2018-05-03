@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1525319678963.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "38856009",
+    "lastKnownWriteTime" : 1525319333,
+    "last_content_update" : 1525319333,
+    "path" : "~/Prog/Mapping/Workspace/modelscript.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "14,55",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

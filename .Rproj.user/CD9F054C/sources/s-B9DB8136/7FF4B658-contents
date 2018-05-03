@@ -1,0 +1,49 @@
+
+#ifndef FIELD_CREATOR_HPP
+#define FIELD_CREATOR_HPP
+
+#include <string>
+using std::string;
+
+#include <vector>
+using std::vector;
+
+inline bool checkQuot(string::iterator &it) {
+	if (*it == '\"') {
+		return true;
+	}
+	return false;
+}
+
+inline string::iterator checkNext(string::iterator it) {
+	return ++it;
+}
+
+inline vector<string> fieldMaker(string &str) {
+	
+	string field = "";
+	vector<string> v_fields;
+	string::iterator it = str.begin();
+	
+	for (it; it != str.end(); ++it) {
+		
+		if (*it == ',') {
+			v_fields.push_back(field);
+			field = "";
+			++it;
+		}
+		
+		if (!checkQuot(it))
+			field += *it;
+		else 
+			if(*(checkNext(it)) == '\"')
+				field += " ";
+	}
+	
+	if (field.size() != 0)
+		v_fields.push_back(field);	
+	
+	return v_fields;
+}
+
+#endif //FIELD_CREATOR_HPP

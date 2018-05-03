@@ -1,0 +1,5 @@
+]0;/home/nello/helpeR]0;nello@nello-sys: ~/helpeR[01;32mnello@nello-sys[00m:[01;34m~/helpeR[00m$ /home/nello/Prog/Mapping/ModelCreation/Dados_materiais de origem_modelagem.xlsx
+bash: /home/nello/Prog/Mapping/ModelCreation/Dados_materiais: No such file or directory
+]0;/home/nello/helpeR]0;nello@nello-sys: ~/helpeR[01;32mnello@nello-sys[00m:[01;34m~/helpeR[00m$ /home/nello/Prog/Mapping/ModelCreation/model_data.csv
+bash: /home/nello/Prog/Mapping/ModelCreation/model_data.csv: No such file or directory
+]0;/home/nello/helpeR]0;nello@nello-sys: ~/helpeR[01;32mnello@nello-sys[00m:[01;34m~/helpeR[00m$ /home/nello/Prog/Mapping/ModelCreation/modelscript.R

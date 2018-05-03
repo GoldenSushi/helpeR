@@ -1,0 +1,27 @@
+original_data = read.table("C:/Arquivos/UFLA/DCS/Projeto materiais de origem/Mapeamento/R/Dados materiais de origem modelagem.txt", header= TRUE)
+
+train_size = floor(0.8 * nrow(original_data))
+
+valid_size = nrow(original_data) - floor(0.8 * nrow(original_data))
+
+##test1 (R² = 1)
+set.seed(10)
+split = sample.split(original_data, SplitRatio = 0.75)
+train_set = subset(original_data, split == TRUE)
+valid_data = subset(original_data, split == FALSE)
+
+r_model1 = randomForest(Matorig ~., data = train_set, ntrees = 1000)
+result = predict(r_model1, newdata = valid_data)
+
+cor(as.numeric(result), as.numeric(valid_data$Matorig))^2
+
+###test2
+set.seed(113)
+split = sample.split(original_data, SplitRatio = 0.75)
+train_set = subset(original_data, split == TRUE)
+valid_data = subset(original_data, split == FALSE)
+
+r_model1 = randomForest(Matorig ~., data = train_set, ntrees = 1000)
+result = predict(r_model1, newdata = valid_data)
+
+cor(as.numeric(result), as.numeric(valid_data$Matorig))^2

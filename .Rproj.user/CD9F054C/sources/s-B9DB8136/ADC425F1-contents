@@ -1,0 +1,1248 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="2.18.17">
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
+    <customproperties/>
+    <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="_predict_rf01020180428172642422" source="/home/nello/Prog/Mapping/QgisResults/_predict_rf010.tif" name="_predict_rf010">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="_predict_rf102020180428172642416" source="/home/nello/Prog/Mapping/QgisResults/_predict_rf1020.tif" name="_predict_rf1020">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="_predict_rf204020180428172642410" source="/home/nello/Prog/Mapping/QgisResults/_predict_rf2040.tif" name="_predict_rf2040">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="_predict_svm01020180428171659662" source="/home/nello/Prog/Mapping/QgisResults/_predict_svm010.tif" name="_predict_svm010">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="_predict_svm102020180428171659657" source="/home/nello/Prog/Mapping/QgisResults/_predict_svm1020.tif" name="_predict_svm1020">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="_predict_svm204020180428171659651" source="/home/nello/Prog/Mapping/QgisResults/_predict_svm2040.tif" name="_predict_svm2040">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="_predict_nnet01020180428165824759" source="/home/nello/Prog/Mapping/QgisResults/_predict_nnet010.tif" name="_predict_nnet010">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="_predict_nnet102020180428165824748" source="/home/nello/Prog/Mapping/QgisResults/_predict_nnet1020.tif" name="_predict_nnet1020">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Unchecked" id="_predict_nnet204020180428165824690" source="/home/nello/Prog/Mapping/QgisResults/_predict_nnet2040.tif" name="_predict_nnet2040">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Área_usos20180422000310956" source="/home/nello/Prog/Mapping/Utils/Area_Usos/Área_usos.shp" name="Área_usos">
+      <customproperties/>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <relations/>
+  <mapcanvas>
+    <units>meters</units>
+    <extent>
+      <xmin>362726.32956190430559218</xmin>
+      <ymin>7831869.34566665720194578</ymin>
+      <xmax>370471.12956190505065024</xmax>
+      <ymax>7837598.14566666912287474</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <projections>1</projections>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=utm +zone=23 +south +datum=WGS84 +units=m +no_defs</proj4>
+        <srsid>3173</srsid>
+        <srid>32723</srid>
+        <authid>EPSG:32723</authid>
+        <description>WGS 84 / UTM zone 23S</description>
+        <projectionacronym>utm</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <layer_coordinate_transform_info>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_ti_raster204020180427010058768"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203857913"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_sr_raster102020180427002846260"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_ba_raster102020180427002846346"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203849138"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005618858"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005617891"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_fe_raster20180426203930021"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_ba_raster20180426203930051"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="cu_raster204020180427005744278"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="_predict_nnet01020180428165824759"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rasterized20180428172431826"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002725436"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="p2o5_raster20180426203426483"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_zr_raster204020180427010058738"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Para_espacializar_10_2020180427001845380"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="al203_raster102020180427002433368"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="al203_raster20180426203426568"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="cu_raster102020180427002433330"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427005948333"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002721456"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002204125"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_cu_raster20180426203930027"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203348962"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="nb_raster204020180427005744245"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="fe_raster204020180427005744270"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002204547"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="v_raster20180426203426444"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_sr_raster20180426203929968"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="pred_nnet01020180428161008895"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="_predict_rf102020180428172642416"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="ti_raster204020180427005744187"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="pb_raster204020180427005744219"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005626218"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="yt_raster102020180427002433235"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_ni_raster204020180427010058812"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="_predict_svm204020180428171659651"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427005953764"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_ti_raster20180426203929962"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_pb_raster20180426203929985"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203853757"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_zr_raster102020180427002846229"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="pred_rf204020180428172244933"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002724087"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Shapes20180426204213426"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_fe_raster204020180427010058842"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Shapes20180427010152199"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="k20_raster204020180427005744261"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427010000054"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203856548"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_cu_raster204020180427010058850"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203852445"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002720816"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_rb_raster20180426203929979"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427003316870"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="v_raster204020180427005744179"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203353615"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="pred_svm102020180428170738430"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="ti_raster102020180427002433249"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rasterized20180428162310432"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005619344"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_sr_raster204020180427010058776"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="pred_nnet102020180428165429632"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203344806"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_cr_raster102020180427002846327"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="sio2_raster102020180427002433263"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005623793"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_yt_raster20180426203929951"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="mn_raster20180426203426503"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Para_espacializar_20_4020180427005315847"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_nb_raster20180426203930004"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002208045"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Filtered_Grid20180428165058969"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002717624"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="zn_raster20180426203426424"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rasterized20180428171412549"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203345404"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="pred_svm01020180428170709958"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="testshp20180428162602294"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="pred_rf01020180428172137805"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002202822"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427005957886"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="v_raster102020180427002433242"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="sr_raster204020180427005744195"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005620282"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203352025"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="cao_raster102020180427002433353"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="cao_raster20180426203426548"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427005959314"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rasterized20180428171557628"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002720169"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="ti_raster20180426203426450"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="ni_raster20180426203426490"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="ba_raster20180426203426555"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="cu_raster20180426203426523"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005617286"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203350496"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Shapes20180426204249859"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="sio2_raster20180426203426463"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002728829"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_sio2_raster20180426203929974"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002206316"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_nb_raster204020180427010058820"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203846546"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="yt_raster20180426203426435"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_cao_raster20180426203930045"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="fe_raster20180426203426516"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_rb_raster204020180427010058790"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_sio2_raster102020180427002846266"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Área_usos20180422000310956"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427005951663"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005621900"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rasterized20180428163053022"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203351010"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rasterized20180428171105141"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002206746"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203853105"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203848490"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rasterized20180428165736099"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rasterized20180428161559416"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203347935"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Shapes20180427002953847"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="zr_raster102020180427002433219"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002200984"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_k20_raster204020180427010058835"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="sio2_raster204020180427005744203"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005622859"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="p2o5_raster2040_tiff20180427005744228"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203354754"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_yt_raster204020180427010058754"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="rb_raster204020180427005744211"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203349480"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="pred_nnet204020180428165454242"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203858617"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002207608"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="ni_raster102020180427002433293"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Para_espacializar_0_1020180426202808905"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="zn_raster204020180427005744163"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_ni_raster102020180427002846291"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_pb_raster204020180427010058797"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427010000749"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002722752"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rasterized20180428161746771"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203354175"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_mn_raster204020180427010058827"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rasterized20180428172512046"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_v_raster20180426203929956"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002726126"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_zn_raster20180426203929945"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203348458"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427005958613"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427005950355"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427005951009"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="cao_raster204020180427005744303"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="nb_raster20180426203426496"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203346928"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002715685"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="cl_raster102020180427002433346"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203855863"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005623325"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203857233"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="mn_raster102020180427002433308"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005624709"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427005955768"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427010001466"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rasterized20180428165558218"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_zn_raster204020180427010058747"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_p2o5_raster102020180427002846284"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="rb_raster102020180427002433270"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005619811"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002203250"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="pred_rf102020180428172205862"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="cl_raster204020180427005744295"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_nb_raster102020180427002846297"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="yt_raster204020180427005744171"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_k20_raster102020180427002846309"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_cao_raster204020180427010058872"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="ba_raster204020180427005744312"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002208929"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203355316"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rasterized20180428165642075"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_cu_raster102020180427002846321"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="_predict_rf204020180428172642410"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203845873"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002209442"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427005953069"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="sr_raster102020180427002433256"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203345910"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_al203_raster20180426203930057"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_cl_raster204020180427010058865"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427004739931"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_p2o5_raster204020180427010058805"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="_predict_svm01020180428171659662"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002203683"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="k20_raster102020180427002433315"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427005952381"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002722108"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005627244"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_cl_raster20180426203930039"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005618382"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="cr_raster20180426203426529"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005626737"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_sio2_raster204020180427010058783"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="al203_raster220180426203426562"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Para_espacializar_0_1020180426203158575"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_fe_raster102020180427002846315"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427005955106"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="al203_raster204020180427005744320"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002718269"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002728145"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002207173"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="_predict_svm102020180428171659657"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="k20_raster20180426203426509"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_zn_raster102020180427002846237"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_k20_raster20180426203930016"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_cr_raster20180426203930033"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="cr_raster102020180427002433338"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rasterized20180428162852192"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="pb_raster20180426203426476"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002202379"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427005949692"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002201951"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005624251"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="zr_raster20180426203426366"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_ba_raster204020180427010058879"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_pb_raster102020180427002846278"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="ni_raster204020180427005744236"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005625188"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="sr_raster20180426203426457"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427005957168"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002723428"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203851743"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_p2o5_raster20180426203929991"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005621437"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203847822"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005620926"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002724768"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203859307"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="_predict_rf01020180428172642422"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="rb_raster20180426203426470"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rasterized20180428171624154"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203347434"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203851110"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203849793"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002718894"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="pred_svm204020180428170818174"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_rb_raster102020180427002846272"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_cr_raster204020180427010058857"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_zr_raster20180426203929939"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005622398"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002209953"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="_predict_nnet102020180428165824748"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427005954420"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427005949033"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002726809"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="pb_raster102020180427002433277"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="pred_nnet01020180428164525082"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_mn_raster102020180427002846303"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203847189"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427005956465"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Shapes20180426204125069"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_al203_raster102020180427002846352"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="fe_raster102020180427002433323"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="cl_raster20180426203426539"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002719521"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427010002164"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203346415"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002205883"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="mn_raster204020180427005744253"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_ti_raster102020180427002846254"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rasterized20180428162225049"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rasterized20180428161936756"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002201516"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_v_raster102020180427002846249"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002716984"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203854448"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rasterized20180428164611232"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002716363"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="p2o5_raster102020180427002433285"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Rasterized20180428172405133"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203352546"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427004822847"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="cr_raster204020180427005744287"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_v_raster204020180427010058761"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_yt_raster102020180427002846243"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_mn_raster20180426203930010"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="zr_raster204020180427005744153"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427005625703"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="ba_raster102020180427002433361"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="zn_raster102020180427002433228"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180427002727476"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427003727329"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="_predict_nnet204020180428165824690"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002204986"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_al203_raster204020180427010058887"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_cao_raster102020180427002846340"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427003818321"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203353050"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_cl_raster102020180427002846333"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002205426"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203855150"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="clip_ni_raster20180426203929997"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203349976"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180426203850454"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180427002208468"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="Grid20180426203351524"/>
+      <layer_coordinate_transform destAuthId="EPSG:32723" srcAuthId="EPSG:32723" srcDatumTransform="-1" destDatumTransform="-1" layerid="nb_raster102020180427002433300"/>
+    </layer_coordinate_transform_info>
+  </mapcanvas>
+  <layer-tree-canvas>
+    <custom-order enabled="0">
+      <item>Área_usos20180422000310956</item>
+      <item>_predict_nnet204020180428165824690</item>
+      <item>_predict_nnet102020180428165824748</item>
+      <item>_predict_nnet01020180428165824759</item>
+      <item>_predict_svm204020180428171659651</item>
+      <item>_predict_svm102020180428171659657</item>
+      <item>_predict_svm01020180428171659662</item>
+      <item>_predict_rf204020180428172642410</item>
+      <item>_predict_rf102020180428172642416</item>
+      <item>_predict_rf01020180428172642422</item>
+    </custom-order>
+  </layer-tree-canvas>
+  <legend updateDrawingOrder="true">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="_predict_rf010" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="_predict_rf01020180428172642422" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="_predict_rf1020" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="_predict_rf102020180428172642416" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="_predict_rf2040" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="_predict_rf204020180428172642410" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="_predict_svm010" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="_predict_svm01020180428171659662" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="_predict_svm1020" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="_predict_svm102020180428171659657" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="_predict_svm2040" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="_predict_svm204020180428171659651" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="_predict_nnet010" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="_predict_nnet01020180428165824759" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="_predict_nnet1020" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="_predict_nnet102020180428165824748" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="_predict_nnet2040" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="_predict_nnet204020180428165824690" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Área_usos" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="Área_usos20180422000310956" visible="1"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <projectlayers>
+    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>366681.59980000008363277</xmin>
+        <ymin>7833420.803999999538064</ymin>
+        <xmax>367603.59980000008363277</xmax>
+        <ymax>7834102.803999999538064</ymax>
+      </extent>
+      <id>_predict_nnet01020180428165824759</id>
+      <datasource>./QgisResults/_predict_nnet010.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>_predict_nnet010</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=23 +south +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3173</srsid>
+          <srid>32723</srid>
+          <authid>EPSG:32723</authid>
+          <description>WGS 84 / UTM zone 23S</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="1"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="0" classificationMax="2.998" classificationMinMaxOrigin="CumulativeCutFullExtentEstimated" band="1" classificationMin="1" type="singlebandpseudocolor">
+          <rasterTransparency/>
+          <rastershader>
+            <colorrampshader colorRampType="INTERPOLATED" clip="0">
+              <item alpha="255" value="1" label="1" color="#fdf4a3"/>
+              <item alpha="255" value="2" label="2" color="#a6cee3"/>
+              <item alpha="255" value="3" label="3" color="#e36062"/>
+            </colorrampshader>
+          </rastershader>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>366681.59980000008363277</xmin>
+        <ymin>7833420.803999999538064</ymin>
+        <xmax>367603.59980000008363277</xmax>
+        <ymax>7834102.803999999538064</ymax>
+      </extent>
+      <id>_predict_nnet102020180428165824748</id>
+      <datasource>./QgisResults/_predict_nnet1020.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>_predict_nnet1020</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=23 +south +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3173</srsid>
+          <srid>32723</srid>
+          <authid>EPSG:32723</authid>
+          <description>WGS 84 / UTM zone 23S</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="1"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="0" classificationMax="2.998" classificationMinMaxOrigin="CumulativeCutFullExtentEstimated" band="1" classificationMin="1" type="singlebandpseudocolor">
+          <rasterTransparency/>
+          <rastershader>
+            <colorrampshader colorRampType="INTERPOLATED" clip="0">
+              <item alpha="255" value="1" label="1" color="#fdf4a3"/>
+              <item alpha="255" value="2" label="2" color="#a6cee3"/>
+              <item alpha="255" value="3" label="3" color="#e36062"/>
+            </colorrampshader>
+          </rastershader>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>366681.59980000008363277</xmin>
+        <ymin>7833420.803999999538064</ymin>
+        <xmax>367603.59980000008363277</xmax>
+        <ymax>7834102.803999999538064</ymax>
+      </extent>
+      <id>_predict_nnet204020180428165824690</id>
+      <datasource>./QgisResults/_predict_nnet2040.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>_predict_nnet2040</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=23 +south +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3173</srsid>
+          <srid>32723</srid>
+          <authid>EPSG:32723</authid>
+          <description>WGS 84 / UTM zone 23S</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="1"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="0" classificationMax="2.998" classificationMinMaxOrigin="CumulativeCutFullExtentEstimated" band="1" classificationMin="1" type="singlebandpseudocolor">
+          <rasterTransparency/>
+          <rastershader>
+            <colorrampshader colorRampType="INTERPOLATED" clip="0">
+              <item alpha="255" value="1" label="1" color="#fdf4a3"/>
+              <item alpha="255" value="2" label="2" color="#a6cee3"/>
+              <item alpha="255" value="3" label="3" color="#e36062"/>
+            </colorrampshader>
+          </rastershader>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>366681.59980000008363277</xmin>
+        <ymin>7833420.803999999538064</ymin>
+        <xmax>367603.59980000008363277</xmax>
+        <ymax>7834102.803999999538064</ymax>
+      </extent>
+      <id>_predict_rf01020180428172642422</id>
+      <datasource>./QgisResults/_predict_rf010.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>_predict_rf010</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=23 +south +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3173</srsid>
+          <srid>32723</srid>
+          <authid>EPSG:32723</authid>
+          <description>WGS 84 / UTM zone 23S</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="1"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="0" classificationMax="2.998" classificationMinMaxOrigin="CumulativeCutFullExtentEstimated" band="1" classificationMin="1" type="singlebandpseudocolor">
+          <rasterTransparency/>
+          <rastershader>
+            <colorrampshader colorRampType="INTERPOLATED" clip="0">
+              <item alpha="255" value="1" label="1" color="#fdf4a3"/>
+              <item alpha="255" value="2" label="2" color="#a6cee3"/>
+              <item alpha="255" value="3" label="3" color="#e36062"/>
+            </colorrampshader>
+          </rastershader>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>366681.59980000008363277</xmin>
+        <ymin>7833420.803999999538064</ymin>
+        <xmax>367603.59980000008363277</xmax>
+        <ymax>7834102.803999999538064</ymax>
+      </extent>
+      <id>_predict_rf102020180428172642416</id>
+      <datasource>./QgisResults/_predict_rf1020.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>_predict_rf1020</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=23 +south +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3173</srsid>
+          <srid>32723</srid>
+          <authid>EPSG:32723</authid>
+          <description>WGS 84 / UTM zone 23S</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="1"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="0" classificationMax="2.998" classificationMinMaxOrigin="CumulativeCutFullExtentEstimated" band="1" classificationMin="1" type="singlebandpseudocolor">
+          <rasterTransparency/>
+          <rastershader>
+            <colorrampshader colorRampType="INTERPOLATED" clip="0">
+              <item alpha="255" value="1" label="1" color="#fdf4a3"/>
+              <item alpha="255" value="2" label="2" color="#a6cee3"/>
+              <item alpha="255" value="3" label="3" color="#e36062"/>
+            </colorrampshader>
+          </rastershader>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>366681.59980000008363277</xmin>
+        <ymin>7833420.803999999538064</ymin>
+        <xmax>367603.59980000008363277</xmax>
+        <ymax>7834102.803999999538064</ymax>
+      </extent>
+      <id>_predict_rf204020180428172642410</id>
+      <datasource>./QgisResults/_predict_rf2040.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>_predict_rf2040</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=23 +south +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3173</srsid>
+          <srid>32723</srid>
+          <authid>EPSG:32723</authid>
+          <description>WGS 84 / UTM zone 23S</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="1"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="0" classificationMax="2.998" classificationMinMaxOrigin="CumulativeCutFullExtentEstimated" band="1" classificationMin="1" type="singlebandpseudocolor">
+          <rasterTransparency/>
+          <rastershader>
+            <colorrampshader colorRampType="INTERPOLATED" clip="0">
+              <item alpha="255" value="1" label="1" color="#fdf4a3"/>
+              <item alpha="255" value="2" label="2" color="#a6cee3"/>
+              <item alpha="255" value="3" label="3" color="#e36062"/>
+            </colorrampshader>
+          </rastershader>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>366681.59980000008363277</xmin>
+        <ymin>7833420.803999999538064</ymin>
+        <xmax>367603.59980000008363277</xmax>
+        <ymax>7834102.803999999538064</ymax>
+      </extent>
+      <id>_predict_svm01020180428171659662</id>
+      <datasource>./QgisResults/_predict_svm010.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>_predict_svm010</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=23 +south +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3173</srsid>
+          <srid>32723</srid>
+          <authid>EPSG:32723</authid>
+          <description>WGS 84 / UTM zone 23S</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="1"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="0" classificationMax="2.998" classificationMinMaxOrigin="CumulativeCutFullExtentEstimated" band="1" classificationMin="1" type="singlebandpseudocolor">
+          <rasterTransparency/>
+          <rastershader>
+            <colorrampshader colorRampType="INTERPOLATED" clip="0">
+              <item alpha="255" value="1" label="1" color="#fdf4a3"/>
+              <item alpha="255" value="2" label="2" color="#a6cee3"/>
+              <item alpha="255" value="3" label="3" color="#e36062"/>
+            </colorrampshader>
+          </rastershader>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>366681.59980000008363277</xmin>
+        <ymin>7833420.803999999538064</ymin>
+        <xmax>367603.59980000008363277</xmax>
+        <ymax>7834102.803999999538064</ymax>
+      </extent>
+      <id>_predict_svm102020180428171659657</id>
+      <datasource>./QgisResults/_predict_svm1020.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>_predict_svm1020</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=23 +south +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3173</srsid>
+          <srid>32723</srid>
+          <authid>EPSG:32723</authid>
+          <description>WGS 84 / UTM zone 23S</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="1"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="0" classificationMax="2.998" classificationMinMaxOrigin="CumulativeCutFullExtentEstimated" band="1" classificationMin="1" type="singlebandpseudocolor">
+          <rasterTransparency/>
+          <rastershader>
+            <colorrampshader colorRampType="INTERPOLATED" clip="0">
+              <item alpha="255" value="1" label="1" color="#fdf4a3"/>
+              <item alpha="255" value="2" label="2" color="#a6cee3"/>
+              <item alpha="255" value="3" label="3" color="#e36062"/>
+            </colorrampshader>
+          </rastershader>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>366681.59980000008363277</xmin>
+        <ymin>7833420.803999999538064</ymin>
+        <xmax>367603.59980000008363277</xmax>
+        <ymax>7834102.803999999538064</ymax>
+      </extent>
+      <id>_predict_svm204020180428171659651</id>
+      <datasource>./QgisResults/_predict_svm2040.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>_predict_svm2040</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=23 +south +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3173</srsid>
+          <srid>32723</srid>
+          <authid>EPSG:32723</authid>
+          <description>WGS 84 / UTM zone 23S</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="1"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="0" classificationMax="2.998" classificationMinMaxOrigin="CumulativeCutFullExtentEstimated" band="1" classificationMin="1" type="singlebandpseudocolor">
+          <rasterTransparency/>
+          <rastershader>
+            <colorrampshader colorRampType="INTERPOLATED" clip="0">
+              <item alpha="255" value="1" label="1" color="#fdf4a3"/>
+              <item alpha="255" value="2" label="2" color="#a6cee3"/>
+              <item alpha="255" value="3" label="3" color="#e36062"/>
+            </colorrampshader>
+          </rastershader>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="0" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>366681.26815044227987528</xmin>
+        <ymin>7833421.33680755365639925</ymin>
+        <xmax>367604.59979958552867174</xmax>
+        <ymax>7834103.8040349967777729</ymax>
+      </extent>
+      <id>Área_usos20180422000310956</id>
+      <datasource>./Utils/Area_Usos/Área_usos.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>Área_usos</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=23 +south +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3173</srsid>
+          <srid>32723</srid>
+          <authid>EPSG:32723</authid>
+          <description>WGS 84 / UTM zone 23S</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="Uso">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="area">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="area__">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="166,206,227,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferJoinStyle" value="64"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitMaxScale" value="0"/>
+        <property key="labeling/distMapUnitMinScale" value="0"/>
+        <property key="labeling/enabled" value="false"/>
+        <property key="labeling/fieldName" value=""/>
+        <property key="labeling/fontBold" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="Ubuntu"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="11"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="20"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-20"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="0"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Medium Italic"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="1"/>
+        <property key="labeling/placementFlags" value="0"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/shadowOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitMaxScale" value="0"/>
+        <property key="labeling/shadowRadiusMapUnitMinScale" value="0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitMaxScale" value="0"/>
+        <property key="labeling/shapeSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>Uso</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name="Ubuntu"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="Uso" index="0" name=""/>
+        <alias field="area" index="1" name=""/>
+        <alias field="area__" index="2" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="Uso" expression=""/>
+        <default field="area" expression=""/>
+        <default field="area__" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+  </projectlayers>
+  <properties>
+    <Measurement>
+      <DistanceUnits type="QString"></DistanceUnits>
+      <AreaUnits type="QString"></AreaUnits>
+    </Measurement>
+    <Palette>
+      <Colors type="QStringList">
+        <value>253,244,163,255</value>
+        <value>166,206,227,255</value>
+        <value>227,96,98,255</value>
+      </Colors>
+      <Labels type="QStringList">
+        <value>#fdf4a3</value>
+        <value>#a6cee3</value>
+        <value>#e36062</value>
+      </Labels>
+    </Palette>
+    <SpatialRefSys>
+      <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
+      <ProjectCRSID type="int">3452</ProjectCRSID>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <Gui>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+    </Gui>
+    <Digitizing>
+      <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
+      <LayerSnappingList type="QStringList">
+        <value>Área_usos20180422000310956</value>
+      </LayerSnappingList>
+      <LayerSnappingEnabledList type="QStringList">
+        <value>enabled</value>
+      </LayerSnappingEnabledList>
+      <SnappingMode type="QString">current_layer</SnappingMode>
+      <AvoidIntersectionsList type="QStringList"/>
+      <LayerSnappingToleranceUnitList type="QStringList">
+        <value>2</value>
+      </LayerSnappingToleranceUnitList>
+      <LayerSnapToList type="QStringList">
+        <value>to_vertex</value>
+      </LayerSnapToList>
+      <DefaultSnapType type="QString">off</DefaultSnapType>
+      <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
+      <LayerSnappingToleranceList type="QStringList">
+        <value>0.000000</value>
+      </LayerSnappingToleranceList>
+    </Digitizing>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+    </PositionPrecision>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+  </properties>
+  <visibility-presets/>
+</qgis>

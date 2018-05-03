@@ -1,0 +1,284 @@
+[
+    {
+        "definitions" : [
+            {
+                "column" : 12,
+                "file" : "/home/nello/helpeR/src/environment_calls.hpp",
+                "kind" : 6,
+                "line" : 9,
+                "name" : "getReadLine",
+                "parent_name" : "",
+                "usr" : "c:@N@input@F@getReadLine#"
+            }
+        ],
+        "file" : "/home/nello/helpeR/src/environment_calls.hpp",
+        "file_last_write" : 1525110485
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 17,
+                "file" : "/home/nello/helpeR/src/file_readers.cpp",
+                "kind" : 6,
+                "line" : 11,
+                "name" : "cread_csv(std::string &, bool)",
+                "parent_name" : "",
+                "usr" : "c:@F@cread_csv#&$@N@std@N@__1@C@basic_string>#C#$@N@std@N@__1@S@char_traits>#C#$@N@std@N@__1@C@allocator>#C#b#"
+            }
+        ],
+        "file" : "/home/nello/helpeR/src/file_readers.cpp",
+        "file_last_write" : 1525318973
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 13,
+                "file" : "/home/nello/helpeR/src/table.cpp",
+                "kind" : 7,
+                "line" : 7,
+                "name" : "setRowNum(const int &)",
+                "parent_name" : "Table",
+                "usr" : "c:@C@Table@F@setRowNum#&1I#"
+            },
+            {
+                "column" : 13,
+                "file" : "/home/nello/helpeR/src/table.cpp",
+                "kind" : 7,
+                "line" : 11,
+                "name" : "setColNum(const int &)",
+                "parent_name" : "Table",
+                "usr" : "c:@C@Table@F@setColNum#&1I#"
+            },
+            {
+                "column" : 12,
+                "file" : "/home/nello/helpeR/src/table.cpp",
+                "kind" : 7,
+                "line" : 16,
+                "name" : "getRowNum",
+                "parent_name" : "Table",
+                "usr" : "c:@C@Table@F@getRowNum#"
+            },
+            {
+                "column" : 12,
+                "file" : "/home/nello/helpeR/src/table.cpp",
+                "kind" : 7,
+                "line" : 20,
+                "name" : "getColNum",
+                "parent_name" : "Table",
+                "usr" : "c:@C@Table@F@getColNum#"
+            },
+            {
+                "column" : 13,
+                "file" : "/home/nello/helpeR/src/table.cpp",
+                "kind" : 7,
+                "line" : 24,
+                "name" : "createDataFrame",
+                "parent_name" : "Table",
+                "usr" : "c:@C@Table@F@createDataFrame#"
+            },
+            {
+                "column" : 13,
+                "file" : "/home/nello/helpeR/src/table.cpp",
+                "kind" : 7,
+                "line" : 30,
+                "name" : "setStringSize(string &)",
+                "parent_name" : "Table",
+                "usr" : "c:@C@Table@F@setStringSize#&$@N@std@N@__1@C@basic_string>#C#$@N@std@N@__1@S@char_traits>#C#$@N@std@N@__1@C@allocator>#C#"
+            },
+            {
+                "column" : 13,
+                "file" : "/home/nello/helpeR/src/table.cpp",
+                "kind" : 7,
+                "line" : 35,
+                "name" : "checkQuot(string::iterator &)",
+                "parent_name" : "Table",
+                "usr" : "c:@C@Table@F@checkQuot#&$@N@std@N@__1@C@__wrap_iter>#*C#"
+            },
+            {
+                "column" : 25,
+                "file" : "/home/nello/helpeR/src/table.cpp",
+                "kind" : 7,
+                "line" : 42,
+                "name" : "checkNext(string::iterator)",
+                "parent_name" : "Table",
+                "usr" : "c:@C@Table@F@checkNext#$@N@std@N@__1@C@__wrap_iter>#*C#"
+            },
+            {
+                "column" : 23,
+                "file" : "/home/nello/helpeR/src/table.cpp",
+                "kind" : 7,
+                "line" : 46,
+                "name" : "fieldMaker(string &)",
+                "parent_name" : "Table",
+                "usr" : "c:@C@Table@F@fieldMaker#&$@N@std@N@__1@C@basic_string>#C#$@N@std@N@__1@S@char_traits>#C#$@N@std@N@__1@C@allocator>#C#"
+            },
+            {
+                "column" : 13,
+                "file" : "/home/nello/helpeR/src/table.cpp",
+                "kind" : 7,
+                "line" : 74,
+                "name" : "makeTable(std::ifstream &)",
+                "parent_name" : "Table",
+                "usr" : "c:@C@Table@F@makeTable#&$@N@std@N@__1@C@basic_ifstream>#C#$@N@std@N@__1@S@char_traits>#C#"
+            },
+            {
+                "column" : 24,
+                "file" : "/home/nello/helpeR/src/table.cpp",
+                "kind" : 7,
+                "line" : 97,
+                "name" : "extractTable",
+                "parent_name" : "Table",
+                "usr" : "c:@C@Table@F@extractTable#"
+            },
+            {
+                "column" : 23,
+                "file" : "/home/nello/helpeR/src/table.cpp",
+                "kind" : 7,
+                "line" : 101,
+                "name" : "extractHead",
+                "parent_name" : "Table",
+                "usr" : "c:@C@Table@F@extractHead#"
+            },
+            {
+                "column" : 13,
+                "file" : "/home/nello/helpeR/src/table.cpp",
+                "kind" : 7,
+                "line" : 112,
+                "name" : "printTable",
+                "parent_name" : "Table",
+                "usr" : "c:@C@Table@F@printTable#"
+            }
+        ],
+        "file" : "/home/nello/helpeR/src/table.cpp",
+        "file_last_write" : 1525313253
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "/home/nello/helpeR/src/table.hpp",
+                "kind" : 2,
+                "line" : 27,
+                "name" : "Table",
+                "parent_name" : "",
+                "usr" : "c:@C@Table"
+            }
+        ],
+        "file" : "/home/nello/helpeR/src/table.hpp",
+        "file_last_write" : 1525313253
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "/home/nello/helpeR/src/tablemanip.cpp",
+                "kind" : 6,
+                "line" : 13,
+                "name" : "negclean(DataFrame)",
+                "parent_name" : "",
+                "usr" : "c:@F@negclean#$@N@Rcpp@C@DataFrame_Impl>#@N@Rcpp@CT>1#T@PreserveStorage#"
+            },
+            {
+                "column" : 11,
+                "file" : "/home/nello/helpeR/src/tablemanip.cpp",
+                "kind" : 6,
+                "line" : 25,
+                "name" : "neural_arrange(NumericMatrix)",
+                "parent_name" : "",
+                "usr" : "c:@F@neural_arrange#$@N@Rcpp@C@Matrix>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#"
+            }
+        ],
+        "file" : "/home/nello/helpeR/src/tablemanip.cpp",
+        "file_last_write" : 1525319140
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 18,
+                "file" : "/home/nello/helpeR/src/valid.cpp",
+                "kind" : 7,
+                "line" : 8,
+                "name" : "search_coord(Rcpp::DataFrame &, int &, int &)",
+                "parent_name" : "Validation",
+                "usr" : "c:@C@Validation@F@search_coord#&$@N@Rcpp@C@DataFrame_Impl>#@N@Rcpp@CT>1#T@PreserveStorage#&I#S2_#"
+            },
+            {
+                "column" : 18,
+                "file" : "/home/nello/helpeR/src/valid.cpp",
+                "kind" : 7,
+                "line" : 28,
+                "name" : "search_predic",
+                "parent_name" : "Validation",
+                "usr" : "c:@C@Validation@F@search_predic#"
+            },
+            {
+                "column" : 18,
+                "file" : "/home/nello/helpeR/src/valid.cpp",
+                "kind" : 7,
+                "line" : 36,
+                "name" : "testXY(int &, int &)",
+                "parent_name" : "Validation",
+                "usr" : "c:@C@Validation@F@testXY#&I#S0_#"
+            },
+            {
+                "column" : 18,
+                "file" : "/home/nello/helpeR/src/valid.cpp",
+                "kind" : 7,
+                "line" : 47,
+                "name" : "testPred",
+                "parent_name" : "Validation",
+                "usr" : "c:@C@Validation@F@testPred#"
+            },
+            {
+                "column" : 18,
+                "file" : "/home/nello/helpeR/src/valid.cpp",
+                "kind" : 7,
+                "line" : 53,
+                "name" : "make",
+                "parent_name" : "Validation",
+                "usr" : "c:@C@Validation@F@make#"
+            },
+            {
+                "column" : 29,
+                "file" : "/home/nello/helpeR/src/valid.cpp",
+                "kind" : 7,
+                "line" : 70,
+                "name" : "makeValid",
+                "parent_name" : "Validation",
+                "usr" : "c:@C@Validation@F@makeValid#"
+            }
+        ],
+        "file" : "/home/nello/helpeR/src/valid.cpp",
+        "file_last_write" : 1525317907
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "/home/nello/helpeR/src/valid.hpp",
+                "kind" : 2,
+                "line" : 11,
+                "name" : "Validation",
+                "parent_name" : "",
+                "usr" : "c:@C@Validation"
+            }
+        ],
+        "file" : "/home/nello/helpeR/src/valid.hpp",
+        "file_last_write" : 1525316513
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 17,
+                "file" : "/home/nello/helpeR/src/validation.cpp",
+                "kind" : 6,
+                "line" : 13,
+                "name" : "validation(Rcpp::DataFrame, Rcpp::DataFrame)",
+                "parent_name" : "",
+                "usr" : "c:@F@validation#$@N@Rcpp@C@DataFrame_Impl>#@N@Rcpp@CT>1#T@PreserveStorage#S0_#"
+            }
+        ],
+        "file" : "/home/nello/helpeR/src/validation.cpp",
+        "file_last_write" : 1525319578
+    }
+]

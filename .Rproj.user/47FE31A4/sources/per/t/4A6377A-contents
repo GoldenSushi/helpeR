@@ -1,0 +1,41 @@
+#
+#install.packages("devtools")
+#install_github(pck_name, repo_owner_name) to download directly from github (available only after installing devtools)
+#install.packages("roxygen2") creates documentation easily w/o the need of LaTeX
+#install.packages("Rcpp") to download the rcpp api and use cpp code in the package
+#
+#use the following ot check system PATH and test if R can access g++ compiler
+#Sys.getenv("PATH")
+#system("g++ -v")
+#
+#find_rtools() to load the tools needed to compile cpp code
+#
+#Rcpp::sourceCpp("path/to/file") to compile the cpp file and test it
+#
+#
+########Steps to build a package########
+#have the above libraries installed
+#create new package project in R
+#can be done by using Rcpp.package.skeleton(name = "package_name") to create a structure ready to compile cpp code
+#
+#devtools::use_rcpp() creates the specific structure needed to build cpp packages (and most importantly the tags)
+#::use_rcpp will provide two tags that MUST be placed in an R script anywhere in the package
+#@useDynLib will identify the name of your package (look out not to change the lower and upper cases)
+#and @importFrom will tell R to use rcppSource to compile the source codes
+#
+#devtools::document() will create the files necessary to document your package, and must be run everytime a change is made
+#if folder was created by Rcpp::package.skeleton the NAMESPACE won't be replaced by ::document()
+#but preferably, user should delete generated NAMESPACE so ::document() can create a new roxygen2 and update it when needed
+#
+#if documentation is facing permission issues (Error in gzfile : cannot open connection) run document() and the documantation should show
+#libraries are installed at "C:\Users\user\Documents\R\win-library\3.4"
+#
+#finally build the package at the build tab (Tools>Project Options>Build Tools>Configure>check all boxes)
+########################################
+
+library("devtools")
+library("Rcpp")
+library("roxygen2")
+find_rtools()
+
+read.table("C:/arquivos/UFLA/DCS/Projeto materiais de origem/mapeamento/R/Dados materiais de origem modelagem.txt", header = TRUE)

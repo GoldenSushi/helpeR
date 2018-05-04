@@ -2,10 +2,13 @@
 % Please edit documentation in R/tablemanip.R
 \name{neural.arrange}
 \alias{neural.arrange}
-\title{Test}
+\title{Neural Arrange}
 \usage{
 neural.arrange(x)
 }
+\arguments{
+\item{x}{Data frame to be arranged}
+}
 \description{
-testing stuff
+Organizes results from neural nework predictions. Creates a column and inserts in each row the name of the column with the biggest probability to occur. By the end, appends this columns to the inserted dataframe.
 }

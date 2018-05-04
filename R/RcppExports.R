@@ -15,8 +15,8 @@ cread_csv <- function(fileName, header) {
 #'@description Substitutes all the negative values in the given Data Frame for 0.
 #'@param x The Data Frame user wishes to process.
 #'@export
-negclean <- function(x) {
-    invisible(.Call('_helpeR_negclean', PACKAGE = 'helpeR', x))
+neg_clean <- function(x) {
+    invisible(.Call('_helpeR_neg_clean', PACKAGE = 'helpeR', x))
 }
 
 neural_arrange <- function(df) {

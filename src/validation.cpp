@@ -15,7 +15,5 @@ Rcpp::DataFrame validation(Rcpp::DataFrame valid, Rcpp::DataFrame predic) {
   Validation val(valid, predic);
   val.make();
   
-  Rcpp::Rcout << "got here" << std::endl;
   return val.makeValid();
-  
   }

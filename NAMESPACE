@@ -2,7 +2,7 @@
 
 export(cread_csv)
 export(hread_table)
-export(negclean)
+export(neg_clean)
 export(neural.arrange)
 export(validation)
 importFrom(Rcpp,sourceCpp)

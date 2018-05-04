@@ -100,6 +100,7 @@ Rcpp::DataFrame Validation::makeValid() {
 				
 				valid_x.erase(valid_x.begin() + j);
 				valid_y.erase(valid_y.begin() + j);
+				valid_col.erase(valid_col.begin() + j);
 			}
 		}
 	}

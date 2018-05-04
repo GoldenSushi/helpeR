@@ -1,12 +1,12 @@
 Package: helpeR
 Type: Package
-Title: Makes your work simple and faster.
+Title: Makes your work simple and faster
 Version: 1.0
 Date: 2018-04-15
 Author: GoldenSushi
 Maintainer: GoldenSushi <sushibartera@gmail.com>
 Description: Package developed to simplify the use of some functions, and also to improve performance of processes that are slower using R language.
-License: GPL (>= 2)
+License: MIT
 Imports: Rcpp (>= 0.12.16)
 LinkingTo: Rcpp
 RoxygenNote: 6.0.1.9000

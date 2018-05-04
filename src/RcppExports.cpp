@@ -17,13 +17,13 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
-// negclean
-void negclean(DataFrame x);
-RcppExport SEXP _helpeR_negclean(SEXP xSEXP) {
+// neg_clean
+void neg_clean(DataFrame x);
+RcppExport SEXP _helpeR_neg_clean(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< DataFrame >::type x(xSEXP);
-    negclean(x);
+    neg_clean(x);
     return R_NilValue;
 END_RCPP
 }
@@ -53,7 +53,7 @@ END_RCPP
 
 static const R_CallMethodDef CallEntries[] = {
     {"_helpeR_cread_csv", (DL_FUNC) &_helpeR_cread_csv, 2},
-    {"_helpeR_negclean", (DL_FUNC) &_helpeR_negclean, 1},
+    {"_helpeR_neg_clean", (DL_FUNC) &_helpeR_neg_clean, 1},
     {"_helpeR_neural_arrange", (DL_FUNC) &_helpeR_neural_arrange, 1},
     {"_helpeR_validation", (DL_FUNC) &_helpeR_validation, 2},
     {NULL, NULL, 0}

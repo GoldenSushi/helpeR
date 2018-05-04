@@ -8,7 +8,7 @@ using namespace Rcpp;
 //'@param x The Data Frame user wishes to process.
 //'@export
 // [[Rcpp::export]]
-void negclean (DataFrame x) {
+void neg_clean (DataFrame x) {
   for (int i = 0; i < x.length(); ++i) {
     NumericVector col = x[i];
     for (int j = 0; j < col.length(); ++j) {
@@ -22,7 +22,7 @@ void negclean (DataFrame x) {
 // [[Rcpp::export]]
 DataFrame neural_arrange (NumericMatrix df) {
   
-  StringVector vec (df.rows());
+  StringVector vec(df.rows());
   StringVector colNames = colnames(df);
   
   for (int i = 0; i < df.rows(); ++i) {

@@ -2,6 +2,8 @@
 
 Table::Table() : m_rowNum(0), m_colNum(0), m_maxStrSize(0) {}
 
+Table::Table(Rcpp::DataFrame df) : m_frame(df), m_rowNum(0), m_colNum(0), m_maxStrSize(0) {}
+
 Table::~Table() {}
 
 void Table::setRowNum(int const &num) {
@@ -92,6 +94,88 @@ void Table::makeTable(std::ifstream &input) {
       }
 		  ++i;
 	}
+}
+
+void Table::makeTable() {
+  
+  int predcol_i = m_frame.findName("Prediction");
+  predictionCol = Rcpp::as<Rcpp::StringVector>(m_frame[predcol_i]);
+  m_frame.erase(m_frame.begin() + predcol_i);
+  
+  for (int i = 0; i < m_frame.size(); ++i) {
+    m_vectable.push_back(m_frame[i]);
+  }
+
+  // //TODO put switch only at cut table. do list of vectors here instead
+  // //use switch to put value into two different vectors
+  // for (DFCOL it = m_frame.begin(); it != m_frame.end(); ++it) {
+  //   m_veclist.push_back(*it);
+  //   switch (TYPEOF(*it)) {
+  //   case REALSXP : {
+  //     Rcpp::NumericVector nvec;
+  //     m_newframe.push_back(nvec);
+  //     break;
+  //   }
+  //   case STRSXP : {
+  //      Rcpp::StringVector strvec;
+  //     m_newframe.push_back(strvec);
+  //     break;
+  //    }
+  //   case INTSXP : {
+  //     Rcpp::IntegerVector intvec;
+  //     m_newframe.push_back(intvec);
+  //     break;
+  //   }
+  //   default : Rcpp::stop("Unsupported type in dataframe");
+  //   }
+  // }
+}
+
+Rcpp::DataFrame Table::cutFromTable(string &str) {
+  
+  vector<int> match_i;
+  for (int i = 0; i < predictionCol.size(); ++i) {
+    if (Rcpp::as<string>(predictionCol[i]) == str) {
+      match_i.push_back(i);
+      }
+    }
+  
+  
+  Rcpp::DataFrame df;
+  for (Rcpp::List::iterator it = m_vectable.begin(); it != m_vectable.end(); ++it) {
+    Rcpp::NumericVector tmp_vec = *it;
+    Rcpp::NumericVector new_col;
+    for (int i = 0; i < match_i.size(); ++i) {
+      int index = (match_i[i]);
+      new_col.push_back(tmp_vec[index]);
+    }
+    df.push_back(new_col);
+  }
+  
+  df.attr("names") = m_frame.attr("names");
+  
+  return df;
+
+  // int pred_index = m_frame.findName("Prediction");
+  // Rcpp::StringVector predictionCol = m_frame[pred_index];
+  // for (int i = 0; i < predictionCol.size(); ++i) {
+  //   if (Rcpp::as<string>(predictionCol[i]) == str){
+  //     for (int j = 0; j < m_frame.size(); ++j) {
+  //       switch (TYPEOF(m_frame[j])) {
+  //       case REALSXP:{
+  //         Rcpp::NumericVector from_nvec = m_frame[j];
+  //         Rcpp::NumericVector to_nvec = m_newframe
+  //       }
+  //     }
+  //   }
+  // }
+  // }
+  // Rcpp::DataFrame df;
+  // for (int i = 0; i < new_table.size(); ++i) {
+  //   df[i] = new_table[i];
+  // }
+  // return df;
+  // 
 }
 
 Rcpp::DataFrame Table::extractTable() {

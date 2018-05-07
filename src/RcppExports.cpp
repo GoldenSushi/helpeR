@@ -38,6 +38,18 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// cutTable
+DataFrame cutTable(DataFrame df, std::string& str);
+RcppExport SEXP _helpeR_cutTable(SEXP dfSEXP, SEXP strSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< DataFrame >::type df(dfSEXP);
+    Rcpp::traits::input_parameter< std::string& >::type str(strSEXP);
+    rcpp_result_gen = Rcpp::wrap(cutTable(df, str));
+    return rcpp_result_gen;
+END_RCPP
+}
 // validation
 Rcpp::DataFrame validation(Rcpp::DataFrame valid, Rcpp::DataFrame predic);
 RcppExport SEXP _helpeR_validation(SEXP validSEXP, SEXP predicSEXP) {
@@ -55,6 +67,7 @@ static const R_CallMethodDef CallEntries[] = {
     {"_helpeR_cread_csv", (DL_FUNC) &_helpeR_cread_csv, 2},
     {"_helpeR_neg_clean", (DL_FUNC) &_helpeR_neg_clean, 1},
     {"_helpeR_neural_arrange", (DL_FUNC) &_helpeR_neural_arrange, 1},
+    {"_helpeR_cutTable", (DL_FUNC) &_helpeR_cutTable, 2},
     {"_helpeR_validation", (DL_FUNC) &_helpeR_validation, 2},
     {NULL, NULL, 0}
 };

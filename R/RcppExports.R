@@ -23,6 +23,10 @@ neural_arrange <- function(df) {
     .Call('_helpeR_neural_arrange', PACKAGE = 'helpeR', df)
 }
 
+cutTable <- function(df, str) {
+    .Call('_helpeR_cutTable', PACKAGE = 'helpeR', df, str)
+}
+
 #'@title Validation
 #'
 #'@description Crosses georreferenced classification predictions with their respective validation tables. Both tables must have columns named X, Y, and Prediction

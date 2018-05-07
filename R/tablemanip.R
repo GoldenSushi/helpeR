@@ -16,3 +16,18 @@ neural.arrange <- function(x) {
   y <- .Call('_helpeR_neural_arrange', x, PACKAGE = 'helpeR')
   cbind(y, x)
 }
+
+#'Cut Table
+#'
+#'@param x Data Frame to cut from
+#'@param searchfor word in the prediction column to search for when cutting
+#'
+#'@export
+cuttable <- function(x, searchfor) {
+  
+  df <- .Call('_helpeR_cutTable', PACKAGE = 'helpeR', x, searchfor)
+  
+  df$Prediction <- searchfor
+  
+  data.frame(df)
+}

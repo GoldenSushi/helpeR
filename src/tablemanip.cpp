@@ -1,6 +1,10 @@
 #include <Rcpp.h>
 #include <iostream>
+#include "table.hpp"
+
 #include <string>
+using std::string;
+
 using namespace Rcpp;
 
 //'@title Negative Cleaner
@@ -39,4 +43,14 @@ DataFrame neural_arrange (NumericMatrix df) {
   
   DataFrame newDF = DataFrame::create(Named("Prediction") = vec);
   return newDF;
+}
+
+// [[Rcpp::export]]
+DataFrame cutTable(DataFrame df, std::string &str) {
+  
+  Table tab(df);
+  tab.makeTable();
+  
+  return tab.cutFromTable(str);
+  
 }
